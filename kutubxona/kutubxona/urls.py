@@ -20,7 +20,7 @@ from kutub.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", Bosh_sahifaView.as_view()),
-    path("muallif", MuallifView.as_view()),
+    path("muallif/", MuallifView.as_view()),
     path("kitob/", KitobView.as_view()),
     path("talaba/", TalabaView.as_view()),
     path("adminview/", AdminView.as_view()),
