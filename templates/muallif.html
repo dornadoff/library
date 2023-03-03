@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mualliflar</title>
+</head>
+<body>
+    {% for i in muallif %}
+    <h1>{{i.id}}.{{i.ism}}</h1>
+    {% endfor %}
+
+<form method="post"> {% csrf_token %}
+    <label>Ism: </label>
+      <input type="text" name="ism" placeholder="Ismni kiriting"><br>
+  <label>Kitob soni: </label>
+      <input type="text" name="kitob_soni" placeholder="Kitob sonini kiriting"><br>
+  <label>Jins: </label>
+  <select name="jins">
+    <option value="erkak">Erkak</option>
+    <option value="ayol">Ayol</option>
+  </select><br>
+  <label>Tug'ilgan sana: </label>
+    <input type="date" name="tugilgan_sana"><br>
+</form>
+</body>
+</html>

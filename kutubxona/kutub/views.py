@@ -5,6 +5,10 @@ from .models import *
 def loginview(request):
     return render(request, "login.html")
 
+class Bosh_sahifaView(View):
+    def get(self, request):
+        return render(request, "bosh_sahifa.html")
+
 class MuallifView(View):
     def get(self, request):
         data = {
@@ -39,7 +43,7 @@ class KitobView(View):
         )
         return redirect("/kitob/")
 
-class TalabView(View):
+class TalabaView(View):
     def get(self, request):
         data = {
             "talaba":Talaba.objects.all()
