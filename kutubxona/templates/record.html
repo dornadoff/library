@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talabalar</title>
+</head>
+<body>
+    <h1>Record: </h1>
+    <hr>
+    <br>
+    {% for i in record %}
+      <h1>{{i.id}}.{{i.talaba.ism}}</h1> <button>O'zgartirish</button> <button>O'chirish</button>
+    {% endfor %}
+</body>
+</html>

@@ -24,5 +24,8 @@ urlpatterns = [
     path("kitob/", KitobView.as_view()),
     path("talaba/", TalabaView.as_view()),
     path("adminview/", AdminView.as_view()),
-    path("record/", RecordView.as_view())
+    path("record/", RecordView.as_view()),
+    # path("kitob/update/<int:pk>/", KitobUpdate.as_view()),
+    # path("talaba/update/<int:pk>/", TalabaUpdate.as_view()),
+    # path("muallif/update/<int:pk>/", MuallifUpdate.as_view())
 ]

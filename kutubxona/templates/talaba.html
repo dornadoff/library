@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talabalar</title>
+</head>
+<body>
+    <h1>Talabalar: </h1>
+    <hr>
+    <br>
+    {% for i in talaba %}
+      <h1>{{i.id}}.{{i.ism}}</h1> <button>O'zgartirish</button> <button>O'chirish</button>
+    {% endfor %}
+</body>
+</html>
